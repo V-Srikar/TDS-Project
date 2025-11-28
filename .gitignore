@@ -12,6 +12,7 @@ venv/
 # Logs and Verification
 *.log
 *.txt
+!requirements.txt
 verify_agent.py
 check_models.py
 verification_results.txt
