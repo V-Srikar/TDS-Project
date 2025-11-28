@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: tds-llm-backend-tp2
+    env: docker
+    region: singapore
+    plan: free
+    dockerContext: .
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: STUDENT_EMAIL
+        sync: false
+      - key: STUDENT_SECRET
+        sync: false
